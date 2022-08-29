@@ -1,0 +1,59 @@
+
+/* GRIDS POR AREAS EN INDEX */
+
+.grid {
+    display: grid;
+    /* Estructura por areas */
+    grid-template-areas: 
+ "cabeza cabeza cabeza" /* Fila 1 */
+ "menu menu menu" /* Fila 2 */
+ "lateral productos categoria" /* Fila 3 */ 
+ "pie pie pie" ; /* Fila 4 */
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 10fr 1fr;
+}
+
+/* GRID POR AREAS EN CONTACTO */
+
+.grid-contacto {
+    display: grid;
+    /* Estructura por areas */
+    grid-template-areas: 
+ "cabeza cabeza cabeza" /* Fila 1 */
+ "menu menu menu" /* Fila 2 */
+ "formulario lateral lateral" /* Fila 3 */ 
+ "pie pie pie" ; /* Fila 4 */
+ grid-template-columns: 1fr 3fr 2fr;
+ grid-template-rows: 1fr 1fr 1fr 1fr;
+ grid-column-gap: 70px;
+}
+
+ /* NOMBRAR AREAS GRIDS */
+ 
+ header {
+    grid-area: cabeza;
+ }
+
+ nav {
+    grid-area: menu;
+ }
+
+.productos {
+    grid-area: categoria;
+}
+
+aside{
+    grid-area: lateral;
+}
+
+.servicios {
+    grid-area: productos;
+}
+
+footer {
+    grid-area: pie;
+}
+
+main {
+    grid-area: formulario;
+}
