@@ -1,0 +1,38 @@
+/* EXTENDS */ 
+body {
+    @include tamaño (100%, 100vh);
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.logo {
+    @extend body ; 
+    background-color: $colorUno;
+    height: 100%;
+    text-align: center; 
+}
+
+nav {
+    @extend .logo ;
+    background-color: $colorDos;
+    height: 80px;
+}
+
+legend {
+    @extend h2 ;
+    font-weight: bold;
+    padding: 20px;
+    }
+
+footer {
+    @extend legend ;
+    background-color: $colorDos;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fotoMotosierra { 
+    @extend .fotoHidrolavadora;
+}

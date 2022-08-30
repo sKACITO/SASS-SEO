@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sKACITO/SASS-SEO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sKACITO/SASS-SEO/issues"
+  },
+  "homepage": "https://github.com/sKACITO/SASS-SEO#readme",
   "description": ""
 }

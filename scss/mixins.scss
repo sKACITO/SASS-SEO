@@ -1,0 +1,12 @@
+// MIXINS 
+@mixin tamaño ($ancho, $altura) {
+    width: $ancho; 
+    height: $altura; 
+}
+
+@mixin posicion ($padding, $margen) {
+    padding: $padding;
+    margin: $margen;
+}
+
+

@@ -2,17 +2,20 @@
 
 @import "grids";
 @import "colores";
+@import "mixins";
 @import "estructuras";
+@import "extends";
+@import "mapa";
+@import "animaciones";
 @import "reseteo";
 
 
-/* ANIDAMIENTO */ 
 
+/* ANIDAMIENTO */ 
 aside {
     list-style: none;
     span {
-        margin: 1%;
-        padding: 10px 10px;
+        @include posicion (10px, 1%);
         width: 100%;
         }
     }
@@ -22,7 +25,7 @@ form {
     text-align: left;
     padding: 6%;
     input {
-        padding: 1%;
+        @include posicion (1%, 0px);
         font-weight: bold;
         display: block;
         width: 40%;
@@ -62,6 +65,7 @@ span {
             }
     }
 
+    /* FIN ANIDAMIENTO */
                 
         
     
